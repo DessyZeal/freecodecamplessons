@@ -16,7 +16,7 @@ body {
     display: grid;
     /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    /* if it's 200px put it in if not stack */
+    /* if it's 200px put it in if not stack or wrap*/
     column-gap: 1em;
     row-gap: 1em;
     /* align-items: end; */
