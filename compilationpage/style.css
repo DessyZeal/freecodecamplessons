@@ -14,7 +14,9 @@ body {
     margin: 100px auto;
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* if it's 200px put it in if not stack */
     column-gap: 1em;
     row-gap: 1em;
     /* align-items: end; */
@@ -41,6 +43,7 @@ body {
     grid-column: 2/4;
 } */
 
+/* responsiveness in grid */
 @media(max-width: 500px) {
     .container {
         grid-template-columns: 1fr;
